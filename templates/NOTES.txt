@@ -1,0 +1,4 @@
+Release {{ .Release.Name }} has been installed in namespace {{ .Release.Namespace }}.
+
+Visit:
+  echo "https://$(oc get route {{ include "springboot-helm.fullname" . }} -n {{ .Release.Namespace }} -o jsonpath='{.spec.host}')"

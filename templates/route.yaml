@@ -1,0 +1,18 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: {{ include "springboot-helm.fullname" . }}
+  labels:
+    {{- include "springboot-helm.labels" . | nindent 4 }}
+spec:
+  path: {{ .Values.route.path }}
+  to:
+    kind: Service
+    name: {{ include "springboot-helm.fullname" . }}
+    weight: 100
+  port:
+    targetPort: http
+  tls:
+    termination: {{ .Values.route.tls.termination }}
+    insecureEdgeTerminationPolicy: {{ .Values.route.tls.insecureEdgeTerminationPolicy }}
+  wildcardPolicy: None
