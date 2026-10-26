@@ -38,3 +38,11 @@ probes:
   path: /actuator/health
   initialDelaySeconds: 10
   periodSeconds: 10
+
+env:
+  - name: DB_URL
+    value: "jdbc:oracle:thin:@//100.64.6.55:1521/WSO2REGDBPDB"
+  - name: DB_USERNAME
+    value: "quan_dev"
+  - name: DB_PASSWORD
+    value: "@Quanminh2003"
