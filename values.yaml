@@ -41,8 +41,17 @@ probes:
 
 env:
   - name: DB_URL
-    value: "jdbc:oracle:thin:@//100.64.6.55:1521/WSO2REGDBPDB"
+    valueFrom:
+      secretKeyRef:
+        name: oracle-db-secret
+        key: url
   - name: DB_USERNAME
-    value: "quan_dev"
+    valueFrom:
+      secretKeyRef:
+        name: oracle-db-secret
+        key: username
   - name: DB_PASSWORD
-    value: "@Quanminh2003"
+    valueFrom:
+      secretKeyRef:
+        name: oracle-db-secret
+        key: password
