@@ -3,9 +3,9 @@ entries:
   springboot-helm:
   - apiVersion: v2
     appVersion: 1.1.0
-    created: "2026-10-26T16:57:50.9957362+07:00"
+    created: "2026-10-26T17:08:21.178278726+07:00"
     description: Custom-built Spring Boot Helm chart for OpenShift
-    digest: 0a744d23b8702da18cbf0190945065feeef74cb4f7215857183e575c1e3d5046
+    digest: 99c232897fd43210aeb697bde2088da1d205ead9af4442e317442aa78a803146
     name: springboot-helm
     type: application
     urls:
@@ -13,7 +13,7 @@ entries:
     version: 0.2.1
   - apiVersion: v2
     appVersion: 1.1.0
-    created: "2026-10-26T16:57:50.995419183+07:00"
+    created: "2026-10-26T17:08:21.178060842+07:00"
     description: Custom-built Spring Boot Helm chart for OpenShift
     digest: 39a6f2a79b343c72b075a9a2c881b9b347fcb615f93d9dd6fa92a22793fa628f
     name: springboot-helm
@@ -23,7 +23,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2026-10-26T16:57:50.995187676+07:00"
+    created: "2026-10-26T17:08:21.177840511+07:00"
     description: Custom-built Spring Boot Helm chart for OpenShift
     digest: 5669d701da956957b7fd0941fc837735f7859f35a1b7a5b8a9d866203f0404d1
     name: springboot-helm
@@ -31,4 +31,4 @@ entries:
     urls:
     - https://hmquannnnn.github.io/springboot-helm/springboot-helm-0.1.0.tgz
     version: 0.1.0
-generated: "2026-10-26T16:57:50.994912202+07:00"
+generated: "2026-10-26T17:08:21.177567826+07:00"
